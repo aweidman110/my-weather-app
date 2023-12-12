@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <div class="weather-app">
+    <header>
+      <form class="search-form" id="search-form">
+        <input
+          type="search" 
+          placeholder="Enter City Here"
+          required
+          class="search-input"
+          id="search-input"
+          />
+          <input type="submit" value="Search" class="search-button"/>
+      </form>
+    </header>
+
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1 class="current-city" id="current-city">New Jersey</h1>
+          <p class="current-details">
+            <span id="current-date"></span>
+            <span id="current-description">, scattered clouds</span> <br />
+            Humidity: 
+            <strong id="humidity">59%</strong>, Wind: <strong id="wind">3.6 km/h</strong>
+          </p>
+        </div>
+        <div class="current-temp">
+          <span class="current-temp-emoji">☀️</span>
+          <span class="current-temp-value" id="current-temp-value">14</span>
+          <span class="current-temp-unit">°C</span>
+        </div>
+      </div>
+      <div class="forecast-weather" id="forecast">
+        <ul>
+          <li>
+            Sunday 🌤️
+            <br />
+            <strong>22°C</strong> - 18°C
+          </li>
+          <li>
+            Monday 🌤️
+            <br />
+            <strong>22°C</strong> - 18°C
+          </li>
+          <li>
+            Tuesday 🌤️
+            <br />
+            <strong>22°C</strong> - 18°C
+          </li>
+          <li>
+            Wednesday 🌤️
+            <br />
+            <strong>22°C</strong> - 18°C
+          </li>
+          <li>
+            Thursday 🌤️
+            <br />
+            <strong>22°C</strong> - 18°C
+          </li>
+        </ul>
+     
+    </main>
+
+    <footer>
+      <p>
+        This project was coded by
+        <a href="https://www.linkedin.com/in/aikaweidman" target="_blank"
+          >Aika Weidman</a
+        >
+        and is
+        <a href="https://github.com/aweidman110" target="_blank"
+          >open-sourced on GitHub</a
+        >
+        and <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
+    </div>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
